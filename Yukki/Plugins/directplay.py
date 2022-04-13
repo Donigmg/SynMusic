@@ -34,11 +34,11 @@ from Yukki.Plugins.custom.func import mplay_stream, vplay_stream
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-JOIN_ASAP = f"⛔️** Access Denied **⛔️\n\n🙋‍♂️ Hey There , You Must Join @szteambots Telegram Channel To Use This BOT. So, Please Join it & Try Again🤗. Thank You 🤝"
+JOIN_ASAP = f"🙋‍♂️ Hai , Anda Harus Bergabung ke grup bot @synxsupport Untuk Menggunakan BOT Ini. Silakan Bergabung & Coba Lagi. Terima kasih"
 
 FSUBB = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="Sz Team Bots <sz/>", url=f"https://t.me/szteambots") 
+        InlineKeyboardButton(text="• Join Grup Bot •", url=f"https://t.me/synxsupport") 
         ]]
     )
 
