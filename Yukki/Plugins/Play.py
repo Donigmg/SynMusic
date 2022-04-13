@@ -41,11 +41,11 @@ from pyrogram.errors import UserNotParticipant
 
 loop = asyncio.get_event_loop()
 
-JOIN_ASAP = f"🙋‍♂️ hai, Anda Harus Bergabung dengan Saluran Telegram @szteambots Untuk Menggunakan BOT Ini. Jadi, Silakan Bergabung & Coba Lagi. Terima kasih 🤝"
+JOIN_ASAP = f"🙋‍♂️ hai, Anda Harus Bergabung ke grup bot @synxsupport Untuk Menggunakan BOT Ini. Silakan Bergabung & Coba Lagi. Terima kasih 🤝"
 
 FSUBB = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="Sz Team Bots <sz/>", url=f"https://t.me/szteambots") 
+        InlineKeyboardButton(text="• Join Grup Bot •", url=f"https://t.me/synxsupport") 
         ]]
     )
 
