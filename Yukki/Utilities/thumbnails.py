@@ -68,7 +68,7 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     font3 = ImageFont.truetype(r'Utils/arial_black.ttf', 40)
     font4 = ImageFont.truetype(r'Utils/arial_bold.ttf', 35)
 
-    BOT_NAME = "Rose Music"
+    BOT_NAME = "Syn Music"
 
     image4 = ImageDraw.Draw(image2)
     image4.text((10, 10), BOT_NAME, fill="white", font = font1, align ="left") 
@@ -83,7 +83,7 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     views = f"Views : {views}"
     duration = f"Duration : {duration} Mins"
     channel = f"Channel : {channel}"
-    szchannel = "Powered By : @szteambots"
+    szchannel = "Powered By : @synxrobot"
 
     image4.text((670, 450), text=views, fill="white", font = font4, align ="left") 
     image4.text((670, 500), text=duration, fill="white", font = font4, align ="left") 
