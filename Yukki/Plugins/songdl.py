@@ -13,7 +13,7 @@ CAPTION_TEXT = """
 """
 
 CAPTION_BTN = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("News  Channel", url="https://t.me/szteambots")]])
+            [[InlineKeyboardButton("News  Channel", url="https://t.me/synxupdate")]])
 
 async def downloadsong(m, message, vid_id):
    try: 
@@ -45,7 +45,7 @@ async def downloadsong(m, message, vid_id):
     if os.path.exists(thumbloc):
         os.remove(thumbloc)
    except Exception as e:
-       await m.edit(f"__Error occured. ⚠️ \nAnd also you can get a help from @slbotzone.__\n\n{str(e)}")
+       await m.edit(f"__Error occured. \nAnd also you can get a help from @synxrobot.__\n\n{str(e)}")
 
 async def downlodvideo(m, message, vid_id):
    try: 
@@ -65,13 +65,13 @@ async def downlodvideo(m, message, vid_id):
     if os.path.exists(video):
             os.remove(video)
    except Exception as e:
-       await m.edit(f"__Error occured. ⚠️ \nAnd also you can get a help from @slbotzone.__\n\n{str(e)}")
+       await m.edit(f"__Error occured. \nAnd also you can get a help from @synxrobot.__\n\n{str(e)}")
 
 @app.on_message(filters.command("song"))
 async def songdown(_, message):
    try: 
     if len(message.command) < 2:
-            return await message.reply_text("Give a song name ⚠️")
+            return await message.reply_text("Give a song name ")
     m = await message.reply_text("🔎 Searching ...")
     name = message.text.split(None, 1)[1]
     vid_id = (YoutubeSearch(name, max_results=1).to_dict())[0]["id"]
@@ -87,7 +87,7 @@ Use help Menu : /help
 async def videodown(_, message):
    try: 
     if len(message.command) < 2:
-            return await message.reply_text("Give a song name ⚠️")
+            return await message.reply_text("Give a song name")
     m = await message.reply_text("🔎 Searching ...")
     name = message.text.split(None, 1)[1]
     vid_id = (YoutubeSearch(name, max_results=1).to_dict())[0]["id"]
