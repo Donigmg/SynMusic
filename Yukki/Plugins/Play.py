@@ -41,11 +41,11 @@ from pyrogram.errors import UserNotParticipant
 
 loop = asyncio.get_event_loop()
 
-JOIN_ASAP = f"🙋‍♂️ hai, Anda Harus Bergabung ke grup bot @synxsupport Untuk Menggunakan BOT Ini. Silakan Bergabung & Coba Lagi. Terima kasih 🤝"
+JOIN_ASAP = f"🙋‍♂️ hai, Anda Harus Bergabung dengan Saluran Telegram @szteambots Untuk Menggunakan BOT Ini. Jadi, Silakan Bergabung & Coba Lagi. Terima kasih 🤝"
 
 FSUBB = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="• Join Grup Bot •", url=f"https://t.me/synxsupport") 
+        InlineKeyboardButton(text="Sz Team Bots <sz/>", url=f"https://t.me/szteambots") 
         ]]
     )
 
@@ -60,7 +60,7 @@ FSUBB = InlineKeyboardMarkup(
 async def play(_, message: Message):
     await message.delete()
     try:
-        await message._client.get_chat_member(int("-1001616236548"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001325914694"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(
         text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
@@ -171,7 +171,7 @@ async def play(_, message: Message):
         buttons = url_markup2(videoid, duration_min, message.from_user.id)
         return await message.reply_photo(
             photo=thumb,
-            caption=f"🏷 **Name:**{title}\n**⏱ Duration**: {duration_min} Mins\n🎧 **Requested by:**{mention}\n\n💡 [Get  Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"🏷 **Name:**{title}\n**⏱Duration**: {duration_min} Mins\n🎧 **Request by:**{mention}\n\n[Get  Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -383,7 +383,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"🏷 **Name:**{title}\n**⏱Duration**: {duration_min} Mins\n🎧 **Request by:**{mention}\n\n[Get  Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"🏷 **Name:**{title}\n**⏱ Duration**: {duration_min} Mins\n🎧 **Request by:**{mention}\n\n[Get  Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
@@ -406,7 +406,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"🏷 **Name:**{title}\n**⏱Duration**: {duration_min} Mins\n🎧 **Request by:**{mention}\n\n[Get  Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"🏷 **Name:**{title}\n**⏱ Duration**: {duration_min} Mins\n🎧 **Request by:**{mention}\n\n[Get  Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
