@@ -8,21 +8,21 @@ def url_markup(videoid, duration, user_id, query, query_type):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🎙Play Song",
+                text="🎵 Music",
                 callback_data=f"MusicStream {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🎬Play Video",
+                text="🎥 Video",
                 callback_data=f"Choose {videoid}|{duration}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⚙️Menu",
+                text="• Menu",
                 callback_data=f"Search {query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="Close ✖️",
+                text="• Close",
                 callback_data=f"forceclose {query}|{user_id}",
             ),
         ],
@@ -34,27 +34,27 @@ def url_markup(videoid, duration, user_id, query, query_type):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Music Play 🎧",
+                text="🎵 Music",
                 callback_data=f"MusicStream {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="Video Play 🎬",
+                text="🎥 Video",
                 callback_data=f"Choose {videoid}|{duration}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🌎 More Results",
+                text="More Results",
                 callback_data=f"Search {query}|{user_id}",
             )
         ],
         [
             InlineKeyboardButton(
-                text="❮❮❮Previous",
+                text="⬅️",
                 callback_data=f"slider B|{query_type}|{query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="Next❯❯❯",
+                text="➡️",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}",
             ),
         ],
