@@ -45,7 +45,7 @@ JOIN_ASAP = f"🙋‍♂️ hai, Anda Harus Bergabung dengan Saluran Telegram @s
 
 FSUBB = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="Sz Team Bots <sz/>", url=f"https://t.me/szteambots") 
+        InlineKeyboardButton(text="Sz Team Bots <sz/>", url=f"https://t.me/synxupdate") 
         ]]
     )
 
